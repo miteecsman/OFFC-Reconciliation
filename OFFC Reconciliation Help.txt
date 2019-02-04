@@ -1,0 +1,61 @@
+This will reconcile the OFFC emails list
+Updated 10/23/18 - updated XL macros
+Updated 1/31/19 - use JotForm, changed Evite format to avoid XL macros
+
+There are 3 input files:
+
+1) OFFC Emails.csv - list of club last name, first name, email, alt emails
+2) OFFC Forum Emails.csv - list of OFFC Forum names & emails
+3) OFFC Evite Emails.csv - list of OFFC Evite contacts names & emails
+
+The program will attempt to open these or prompt if they can't be found.
+
+First two are CSV files with the first line skipped as a header.
+The first column should be the friendly name followed by email column(s)
+Do not leave any extra commas except the OFFC Emails.csv can have an 
+extra comma for the alternate email.  Do not leave any blank or other
+lines at the end.
+
+The Evite doesn't have a header, and names & emails alternate lines
+
+1) OFFC Emails.csv
+    Header row expected
+
+    Download the club membership from Jotform
+    Delete the other columns besides 4 cols Last, First, Primary, Alternate
+    Reorder first/last names
+    File/Save As/CSV (not UTF-8)/OFFC Emails.csv
+    Open file in Notepad to verify only those 4 cols, no extra rows or cols
+     
+2) OFFC Forum Emails.csv - list of OFFC Forum names & emails
+    Header row expected
+
+    Manage members / Export Members
+    Open the CSV and delete extra header row (leave 1 header row)
+    delete extra cols leaving just Email, Nickname cols
+    Reorder to Nickname, Email
+    File/Save As/CSV/OFFC Forum Emails.csv
+    Open file in Notepad to verify 
+    
+    
+3) OFFC Evite Emails.csv - list of OFFC Evite contacts names 
+   followed by email on next line.  No header row
+    
+    Create a new invite using a template w/o a photo
+    Fill in required files & Continue
+    Evite contacts - Add all
+    Save & Send Later
+    Manage Invitation
+    Go to your Saved Guest List
+    Ctrl-A the whole page
+    Ctrl-C to copy
+    Open Excel
+    Ctrl-V to paste
+    Go to start of contacts (A20)
+    Ctrl-Shift-Down to select all contacts
+    Copy the contacts
+    File/New/Blank
+    Paste the contacts by themselves to the new sheet
+    Delete any extra rows
+    Save as CSV (not UTF-8)/OFFC Evite Emails.csv
+    After done, you must both Cancel and Remove the event
