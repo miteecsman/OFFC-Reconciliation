@@ -19,16 +19,19 @@ lines at the end.
 The Evite doesn't have a header, and names & emails alternate lines
 
 1) OFFC Emails.csv
-    Header row expected
+    Header row expected, doesn't need to be sorted
 
-    Download the club membership from Jotform
-    Delete the other columns besides 4 cols Last, First, Primary, Alternate
+    Log into jotform.com
+    Select Overlake Fly Fishing Club Membership 20XX
+    From Reports select Webmaster Excel supplying the secondary password
+    In Excel filter for approved and paid
+    Copy Last, First, Primary, Alternate cols to new sheet
     Reorder first/last names
     File/Save As/CSV (not UTF-8)/OFFC Emails.csv
     Open file in Notepad to verify only those 4 cols, no extra rows or cols
      
 2) OFFC Forum Emails.csv - list of OFFC Forum names & emails
-    Header row expected
+    Header row expected, doesn't need to be sorted
 
     Manage members / Export Members
     Open the CSV and delete extra header row (leave 1 header row)
@@ -39,7 +42,7 @@ The Evite doesn't have a header, and names & emails alternate lines
     
     
 3) OFFC Evite Emails.csv - list of OFFC Evite contacts names 
-   followed by email on next line.  No header row
+   followed by email on next line.  No header row.  Not sorted
     
     Create a new invite using a template w/o a photo
     Fill in required files & Continue
